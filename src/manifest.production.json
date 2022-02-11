@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "MMIT Curriculum Checker",
+    "description": "chrome extension",
+    "version": "0.0.14",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "/js/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "devtools_page": "devtools.html",
+    "content_scripts": [{
+        "matches": ["https://www1.reg.cmu.ac.th/*"],
+        "js": ["/js/content.js"]
+    }]
+}

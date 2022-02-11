@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "MMIT Curriculum Checker",
+    "description": "chrome extension",
+    "version": "0.0.1",
+    "background": {
+        "service_worker": "/js/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "devtools_page": "devtools.html"
+}

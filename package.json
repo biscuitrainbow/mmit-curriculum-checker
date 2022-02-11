@@ -5,25 +5,34 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-watch": "vue-cli-service build-watch --mode development"
   },
   "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^9.8.8",
+    "cheerio": "^1.0.0-rc.10",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue": "^2.6.11",
+    "vuex": "3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "copy-webpack-plugin": "^4.6.0",
     "eslint-plugin-vue": "^6.2.2",
+    "postcss-loader": "^4.0.3",
+    "vue-cli-plugin-chrome-extension-cli": "~1.0.9",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "webextensions": true
     },
     "extends": [
       "plugin:vue/essential",
