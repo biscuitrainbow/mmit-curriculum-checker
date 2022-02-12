@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "MMIT Curriculum Checker",
     "description": "chrome extension",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "permissions": [
         "tabs"
     ],
